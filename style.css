@@ -1,38 +1,113 @@
-body{
-font-family: Arial, Helvetica, sans-serif;
-background-color: #f4f4f4;
-color: #333;
-line-height: 1.6;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
 }
 
-header{
-
-display: flex;
-justify-content: center;
-}
-
-
-
-.nav a{
-text-decoration: none;
-color: #333;
+header,
+footer {
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 
-.nav a:hover{
-
-color: blue;
-
-
+header .nav,
+footer .nav {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }
 
-#Projetos{
-text-align: center;
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
-#secaoprojetos{
-display: flex;
-flex-direction: row;
-align-content: center;
-justify-content: space-evenly;
+.nav a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px, 20px;
+}
+
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 0
+}
+
+#projetos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#projetos article {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#projetos article h3 {
+    margin-bottom: 10px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+section h1,
+section h2 {
+    margin-bottom: 15px;
+}
+
+#hobbies ul {
+    display: flex;
+    flex: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+#hobbies li {
+    background-color: grey;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#projetos article a {
+    display: inline-block;
+    margin-top: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+    color: white;
+    background-color: grey;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer p {
+    padding: 10px;
 }
